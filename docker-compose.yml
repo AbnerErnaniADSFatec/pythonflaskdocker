@@ -1,0 +1,9 @@
+version: "2"
+services: 
+  app: 
+    container_name: app-flask-api
+    build: 
+      context: ../
+      dockerfile: deployments/app/DockerFile
+    ports:
+      - "5000:5000"
