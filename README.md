@@ -14,5 +14,5 @@ $ docker create volume api-flask_vol
 $ docker build -t api-flask:latest .
 ```
 ```
-$ docker container run --name api-flask -d -v api-flask:'//your_data' -p 5000:5000 api-flask:latest
+$ docker container run --name api-flask -d -v api-flask_vol:'//your_data' -p 5000:5000 api-flask:latest
 ```
