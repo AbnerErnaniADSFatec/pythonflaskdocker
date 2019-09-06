@@ -85,5 +85,17 @@ api.add_resource(CitiesByState, '/cities/<uf>')
 api.add_resource(States, '/states')
 api.add_resource(Layers, '/layers')
 
+@app.route("/anomalia", methods=['GET','POST'])
+def anomalia():
+    if request.method == 'POST':
+        try:
+            print(request.get_json(force=True)['test'])
+            return jsonify({ 'info' : request.get_json(force=True)['test'] })
+        except:
+            print("erro!")
+            return jsonify({ 'info' : 'Impossivel ler os dados' })
+    if request.method == 'GET':
+        return jsonify({ 'info' : 'metodo GET não permitido para este URL' })
+
 if __name__ == '__main__':
     app.run( debug = True, host = "0.0.0.0" )
