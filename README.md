@@ -16,3 +16,8 @@ $ docker build -t api-flask:latest .
 ```
 $ docker container run --name api-flask -d -v api-flask_vol:'//your_data' -p 5000:5000 api-flask:latest
 ```
+
+## Or configure by shell file
+```
+$ sudo chmod +x install.sh && ./install.sh
+```
