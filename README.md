@@ -1,6 +1,7 @@
 # Python Flask Docker
 
-API Flask faz a busca de dados específicos no banco de dados Postgres do TerraMA2.
+API Flask faz a busca de dados específicos no banco de dados Postgres do TerraMA2 Python 3.8 e Docker instalado.
+- [SQL TerraMA2 PostGIS](https://github.com/AbnerErnaniADSFatec/sqlterrama2postgis) para a criação do ambiente de desenvolvimento da API
 
 ## Create a volume to save your data
 
